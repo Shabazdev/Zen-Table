@@ -36,7 +36,7 @@ export const restaurantData = {
   email: "reservations@zentablectg.com",
   facebookUrl: "https://www.facebook.com/zentablectg",
   instagramUrl: "https://www.instagram.com/zentablectg",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.873!2d91.815!2d22.356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIxJzIxLjYiTiA5McKwMzAnMDAuMCJF!5e0!3m2!1sen!2sbd!4v1",
+  mapEmbedUrl: "https://www.google.com/maps?q=Zen%20Table%2C%20Chattogram%2C%20Bangladesh&output=embed",
   
   openingHours: [
     { day: "Saturday", hours: "12:00 PM – 12:00 AM" },

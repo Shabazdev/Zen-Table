@@ -1,6 +1,7 @@
 import React from 'react';
 import { restaurantData } from '../data/restaurant';
-import { MapPin, Phone, Mail, Clock, ExternalLink, Facebook, Instagram, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Sparkles } from 'lucide-react';
+import { GoogleMap } from './GoogleMap';
 
 export const Location: React.FC = () => {
   return (
@@ -101,28 +102,9 @@ export const Location: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Google Maps Mock / Embed */}
-          <div className="lg:col-span-7 h-[550px] bg-[#0c0c0e] border border-white/10 relative overflow-hidden shadow-xl flex flex-col">
-            <div className="absolute top-4 left-4 z-10 bg-black/80 backdrop-blur-md px-4 py-2 border border-white/10 text-xs text-white">
-              <span className="text-[#d4af37] font-semibold">Bayazid Bostami Road</span>, Chattogram
-            </div>
-            <iframe
-              title="Zen Table Location Map"
-              src={restaurantData.mapEmbedUrl}
-              className="w-full h-full border-0 filter invert contrast-125 opacity-80"
-              loading="lazy"
-            />
-            <div className="absolute bottom-6 right-6 z-10">
-              <a
-                href="https://maps.google.com/?q=Innovative+Bhuiyan+Orchid+Bayazid+Bostami+Road+Chattogram"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-3 bg-[#d4af37] text-[#0c0c0e] text-xs font-semibold uppercase tracking-wider flex items-center gap-2 shadow-lg hover:bg-[#c5a028] transition-all"
-              >
-                <span>Open in Google Maps</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
+          {/* Right: Google Map Component */}
+          <div className="lg:col-span-7">
+            <GoogleMap />
           </div>
         </div>
       </div>
