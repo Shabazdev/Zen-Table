@@ -1,0 +1,6 @@
+{
+  "name": "Zen Table | Pan-Asian Restaurant Chattogram",
+  "description": "Experience thoughtfully crafted Pan-Asian cuisine in an elegant dining atmosphere at Zen Table, Chattogram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
